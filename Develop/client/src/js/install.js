@@ -19,7 +19,7 @@ butInstall.addEventListener('click', async () => {
     console.log('💥 butInstall clicked! We are installing, people!')
     const promptEvent = window.deferredPrompt;
     if (!promptEvent) {
-        //  THIS MEANS THAT WINDOW.DEFERREDPROMPT IS NOT AVAILABLE
+        //THIS MEANS THAT WINDOW.DEFERREDPROMPT IS NOT AVAILABLE
         return;
     }
     //LETS THE PEOPLE KNOW THEY PRESSED SOMETHING
