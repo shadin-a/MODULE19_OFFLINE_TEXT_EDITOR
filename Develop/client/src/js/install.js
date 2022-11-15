@@ -5,7 +5,7 @@ const butInstall = document.getElementById('buttonInstall');
 
 window.addEventListener('beforeinstallprompt', (event) => { 
     //NOT ME HANDLING THIS EVENT
-    console.log('beforeinstallprompt','beforeinstallprompt', event);
+    console.log('💣 install?', event);
     //PREVENT DEFAULT
     event.preventDefault();
     // STASH THE EVENT SO WE CAN TRIGGER IT LATER
@@ -24,11 +24,16 @@ butInstall.addEventListener('click', async () => {
     }
     //LETS THE PEOPLE KNOW THEY PRESSED SOMETHING
     promptEvent.prompt();
-    //NO STASHING!
+    //NO STASHING! WE CAN ONLY PRESS INSTALL ONCE.
     window.deferredPrompt = null;
     // HIDES THE INSTALL BUTTON. NO MORE RIGHTS.
     butInstall.classList.toggle("hidden", true);
 });
 
 // TODO: Add an handler for the `appinstalled` event
-window.addEventListener('appinstalled', (event) => {});
+window.addEventListener('appinstalled', (event) => {
+    console.log('👀 app installed!', event);
+    //ONLY SHOWS ONCE
+    window.deferredPrompt = null;
+
+});
