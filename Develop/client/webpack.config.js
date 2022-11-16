@@ -35,6 +35,8 @@ module.exports = () => {
         description: 'Read the name',
         background_color: '#FFFFFF',
         crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),

@@ -9,7 +9,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
     //PREVENT DEFAULT
     event.preventDefault();
     // STASH THE EVENT SO WE CAN TRIGGER IT LATER
-    deferredPrompt = event;
+    window.deferredPrompt = event;
     // REMOVE THE HIDDEN CLASS FROM THE INSTALL CONTAINER
     divInstall.classList.toggle('hidden',false);
     });
