@@ -7,11 +7,11 @@ window.addEventListener('beforeinstallprompt', (event) => {
     //NOT ME HANDLING THIS EVENT
     console.log('💣 install?', event);
     //PREVENT DEFAULT
-    event.preventDefault();
+    //event.preventDefault();
     // STASH THE EVENT SO WE CAN TRIGGER IT LATER
     window.deferredPrompt = event;
     // REMOVE THE HIDDEN CLASS FROM THE INSTALL CONTAINER
-    divInstall.classList.toggle('hidden',false);
+    butInstall.classList.toggle('hidden',false);
     });
 
 // TODO: Implement a click event handler on the `butInstall` element
