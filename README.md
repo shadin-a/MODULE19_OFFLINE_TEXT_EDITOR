@@ -24,7 +24,7 @@ No tests for this iteration of the Text Editor. Check again soon!
 
       npm run start
 
-  ![App in Use](assets/JATE SCREENSHOT.png)
+  ![App in Use](./assets/JATE%20SCREENSHOT.png)
 
   ## FAQ
   * shadin.alarab@gmail.com
