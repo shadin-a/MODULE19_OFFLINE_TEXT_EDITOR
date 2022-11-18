@@ -11,7 +11,7 @@
   ## DESCRIPTION
  Welcome to Just Another Text Editor (JATE), a progressive web application that features data persistence and a downloadable version in case you need to text-edit offline! We used an an IndexedDB database to store your content and Heroku to deploy the application itself.
 
-  </br> Deployed App: --
+  </br> Deployed App: https://still-citadel-86505.herokuapp.com/
 
   ## INSTALLATION
 No installation required for the deployed app. However, to utilise it's offline version, press the provided Install button and follow the prompt.
